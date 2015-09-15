@@ -17,6 +17,15 @@ public class Sacar {
   private Double Valor;
   private Date Data;
   private String Descricao;
+  private Date Hora;
+
+    public Date getHora() {
+        return Hora;
+    }
+
+    public void setHora(Date Hora) {
+        this.Hora = Hora;
+    }
 
     public Integer getIdSacar() {
         return idSacar;

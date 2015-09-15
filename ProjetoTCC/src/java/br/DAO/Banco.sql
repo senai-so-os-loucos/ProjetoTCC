@@ -52,8 +52,9 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `ProjetoTCC`.`Adiantamento` (
   `idAdiantamento` INT NOT NULL,
   `valor` DOUBLE NOT NULL,
-  `data` DATETIME NOT NULL,
+  `data` DATE NOT NULL,
   `descricao` VARCHAR(100) NOT NULL,
+  `Hora` TIME NOT NULL,
   `idFuncionario` INT NOT NULL,
   `idUsuario` INT NOT NULL,
   PRIMARY KEY (`idAdiantamento`),
@@ -78,8 +79,9 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `ProjetoTCC`.`Sacar` (
   `idSacar` INT NOT NULL,
   `valor` DOUBLE NOT NULL,
-  `data` DATETIME NOT NULL,
+  `data` DATE NOT NULL,
   `descricao` VARCHAR(100) NOT NULL,
+  `Hora` TIME NOT NULL,
   `idFuncionario` INT NOT NULL,
   `idUsuario` INT NOT NULL,
   PRIMARY KEY (`idSacar`),
@@ -104,8 +106,9 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `ProjetoTCC`.`deposito` (
   `iddeposito` INT NOT NULL,
   `valor` DOUBLE NOT NULL,
-  `data` DATETIME NOT NULL,
+  `data` DATE NOT NULL,
   `Descricao` VARCHAR(100) NOT NULL,
+  `Hora` TIME NOT NULL,
   `idFuncionario` INT NOT NULL,
   `idUsuario` INT NOT NULL,
   PRIMARY KEY (`iddeposito`),
