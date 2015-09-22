@@ -26,7 +26,7 @@ public class Funcionario {
     private String cidade;
     private String estado;
     private Integer adm;
-    private Integer salario;
+    private Double salario;
 
     public Integer getIdFuncionario() {
         return idFuncionario;
@@ -116,14 +116,15 @@ public class Funcionario {
         this.adm = adm;
     }
 
-    public Integer getSalario() {
+    public Double getSalario() {
         return salario;
     }
 
-    public void setSalario(Integer salario) {
+    public void setSalario(Double salario) {
         this.salario = salario;
     }
-    
+
+  
     
     
     
